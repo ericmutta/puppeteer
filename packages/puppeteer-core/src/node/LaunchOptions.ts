@@ -25,6 +25,11 @@ import {Product} from '../common/Product.js';
 export interface BrowserLaunchArgumentOptions {
   /**
    * Whether to run the browser in headless mode.
+   *
+   * @remarks
+   * Deprecating `headless: true` if favor of `headless: 'new'`
+   * You can read more about the change {@link https://developer.chrome.com/articles/new-headless/ | here}.
+   *
    * @defaultValue `true`
    */
   headless?: boolean | 'new';
